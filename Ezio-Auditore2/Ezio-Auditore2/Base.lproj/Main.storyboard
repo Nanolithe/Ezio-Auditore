@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1oW-J2-5OD">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ezio Auditore-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ezio_Auditore2" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,75 +16,188 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-tJ-8dG" userLabel="Main Stack View">
-                                <rect key="frame" x="84" y="59" width="260" height="328"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-Yt-389">
+                                <rect key="frame" x="20" y="88" width="388" height="451"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-y6-oeQ" userLabel="Photo View">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="148"/>
+                                        <rect key="frame" x="64" y="0.0" width="260" height="265"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EzioAuditore" translatesAutoresizingMaskIntoConstraints="NO" id="kWW-CD-Nct">
-                                                <rect key="frame" x="12" y="8" width="240" height="128"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EzioAuditore" translatesAutoresizingMaskIntoConstraints="NO" id="kWW-CD-Nct">
+                                                <rect key="frame" x="8" y="0.0" width="252" height="245"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="52q-zZ-zXB"/>
-                                                    <constraint firstAttribute="height" constant="128" id="gdd-1u-Wqk"/>
+                                                    <constraint firstAttribute="width" constant="252" id="4eE-wR-vO9"/>
+                                                    <constraint firstAttribute="height" constant="245" id="WeQ-f3-WLT"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="kWW-CD-Nct" secondAttribute="bottom" constant="12" id="C9V-Dd-B7O"/>
-                                            <constraint firstAttribute="trailing" secondItem="kWW-CD-Nct" secondAttribute="trailing" constant="8" id="N3F-YC-oCW"/>
-                                            <constraint firstItem="kWW-CD-Nct" firstAttribute="leading" secondItem="Imz-y6-oeQ" secondAttribute="leading" constant="12" id="X8D-fq-m8y"/>
-                                            <constraint firstItem="kWW-CD-Nct" firstAttribute="top" secondItem="Imz-y6-oeQ" secondAttribute="top" constant="8" id="XYn-ud-81O"/>
+                                            <constraint firstItem="kWW-CD-Nct" firstAttribute="top" secondItem="Imz-y6-oeQ" secondAttribute="top" id="8eU-zG-aTg"/>
+                                            <constraint firstAttribute="trailing" secondItem="kWW-CD-Nct" secondAttribute="trailing" id="GxN-Hz-BHk"/>
+                                            <constraint firstAttribute="bottom" secondItem="kWW-CD-Nct" secondAttribute="bottom" constant="20" id="cKi-vi-6Dm"/>
+                                            <constraint firstItem="kWW-CD-Nct" firstAttribute="leading" secondItem="Imz-y6-oeQ" secondAttribute="leading" constant="8" id="pCE-ED-xBk"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-a4-p95" userLabel="Links View">
-                                        <rect key="frame" x="0.0" y="156" width="260" height="172"/>
+                                        <rect key="frame" x="0.0" y="273" width="388" height="178"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="VIu-rL-tW6">
-                                                <rect key="frame" x="76" y="32" width="109" height="31"/>
+                                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hn-z2-kur" userLabel="Desmond View">
+                                                <rect key="frame" x="56" y="73" width="276" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Hometown"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNQ-b6-gCb">
-                                                <rect key="frame" x="47" y="0.0" width="166" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="igT-HV-Lad">
+                                                        <rect key="frame" x="-77" y="-9" width="430" height="55"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Desmond Miles (Ezio's Future Relative)"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="AgO-Rx-BVi" appends="YES" id="baJ-T9-pt4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-69-xys" userLabel="Family View">
+                                                <rect key="frame" x="0.0" y="-8" width="388" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Ezio Auditore's Family"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="igT-HV-Lad">
-                                                <rect key="frame" x="-8" y="71" width="276" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNQ-b6-gCb">
+                                                        <rect key="frame" x="64" y="-6" width="260" height="47"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Ezio's Family"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="zNh-xR-31a" appends="YES" id="pWY-Wo-VBv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJW-Dt-BGB" userLabel="Hometown View">
+                                                <rect key="frame" x="56" y="48" width="380" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Desmond Miles (Ezio's Future Relative)"/>
-                                            </button>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="VIu-rL-tW6">
+                                                        <rect key="frame" x="87" y="-14" width="109" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Hometown"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="JQ5-xm-hCE" appends="YES" id="BRn-uB-QG5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="328" id="R5F-XB-Map"/>
+                                    <constraint firstItem="Imz-y6-oeQ" firstAttribute="top" secondItem="Tp2-Yt-389" secondAttribute="top" id="Kmr-G5-SVB"/>
+                                    <constraint firstItem="qtP-a4-p95" firstAttribute="top" secondItem="Imz-y6-oeQ" secondAttribute="bottom" constant="8" id="QzL-Il-AhN"/>
+                                    <constraint firstItem="qtP-a4-p95" firstAttribute="leading" secondItem="Tp2-Yt-389" secondAttribute="leading" id="ncR-K8-D6Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="qtP-a4-p95" secondAttribute="trailing" id="si5-2X-i1n"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gmO-tJ-8dG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="a1k-fc-QeN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gmO-tJ-8dG" secondAttribute="trailing" constant="84" id="hsu-hX-RvA"/>
-                            <constraint firstItem="gmO-tJ-8dG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="jut-an-jWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tp2-Yt-389" secondAttribute="trailing" constant="20" id="05B-cp-4oP"/>
+                            <constraint firstItem="Tp2-Yt-389" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F7S-X7-Yew"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tp2-Yt-389" secondAttribute="bottom" constant="353" id="Zjf-BG-l7z"/>
+                            <constraint firstItem="Tp2-Yt-389" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eTJ-VB-ZRX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Ezio Auditore" id="ntb-DU-dVF"/>
+                    <connections>
+                        <segue destination="De5-Ip-fMb" kind="show" identifier="detailSegue" id="8X3-Qp-FPF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zNh-xR-31a">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="J9W-JT-oGf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JQ5-xm-hCE">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="6qC-kf-H7q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="AgO-Rx-BVi">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="sTX-p6-fQU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="928.03738317757006" y="83.585313174946009"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="sbc-Ia-tnp">
+            <objects>
+                <viewController id="De5-Ip-fMb" customClass="DetailViewController" customModule="Ezio_Auditore2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJD-Ez-Aen">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-S3-I7j">
+                                <rect key="frame" x="72" y="88" width="260" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="auditorefamily" translatesAutoresizingMaskIntoConstraints="NO" id="sva-4F-Axb">
+                                        <rect key="frame" x="0.0" y="25" width="260" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-9R-hDx">
+                                <rect key="frame" x="72" y="370" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Giovanni Auditore (father) Maria Auditore (mother) Federico Auditore (brother) Petruccio Auditore (brother) Claudia Auditore (sister)</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c4w-1F-KFO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CYw-B6-AKH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ta3-gY-fqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xch-l6-B6O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1oW-J2-5OD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JVF-d6-8xV">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mxb-F6-9JT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQu-aV-GAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.037383177570092" y="83.585313174946009"/>
         </scene>
     </scenes>
     <resources>
         <image name="EzioAuditore" width="350" height="720"/>
+        <image name="auditorefamily" width="1003" height="796"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
